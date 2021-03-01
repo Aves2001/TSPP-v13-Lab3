@@ -82,12 +82,12 @@ namespace Lab3_3
                     }
                     if (tmp) { break; }// якщо tmp = true можна покинути цей цикл
                 }
-                if (tmp) // якщо  tmp дорівнює true повертає false
+                if (!tmp) // якщо  tmp дорівнює false повертає true
                 {
-                    return false;
+                    return true;
                 }
             }
-            return true; // в іншому випадку повертає false
+            return false; // в іншому випадку повертає false
         }
     }
 }
